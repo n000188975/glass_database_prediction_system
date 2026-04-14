@@ -55,7 +55,7 @@ else:
 
 if data_source:
     trained_models, df_ref, feature_cols = load_and_train(data_source)
-    st.title('🔬 玻璃性質預測與逆向開發系統')
+    st.title('🔬 LCTE玻璃性質預測與逆向開發系統')
     
     tab1, tab2 = st.tabs(['🎯 正向物性預測', '⚙️ 逆向配方優化'])
     feat_keys = [k.replace('compounds_', '') for k in feature_cols]
